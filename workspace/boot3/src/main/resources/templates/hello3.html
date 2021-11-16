@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .color{
+            background-color:yellow;
+            color:green;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li th:each="dto, state : ${list}">
+            <span th:if="${dto.bno != 7}"
+                  th:class="${dto.bno % 5 == 0} ? 'color'"
+                  th:text="${dto}">
+            </span>
+            <span th:unless="${dto.bno != 7}"
+                  th:text="${'7입니다'}">
+            </span>
+        </li>
+
+    </ul>
+
+</body>
+</html>
