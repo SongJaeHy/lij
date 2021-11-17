@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>fragment2 요소 끌어오기</h1>
+
+    <th:block th:replace="~{/fragment3}"></th:block>
+
+    <h1>part1 가져오기</h1>
+    <div th:replace="~{/fragment2 :: part1}"></div>
+
+    <h2>part2 가져오기</h2>
+    <div th:insert="~{/fragment2 :: part2}"></div>
+
+</body>
+</html>

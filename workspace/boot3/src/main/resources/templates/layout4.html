@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<th:block th:replace="~{/fragment5 :: cssItems(~{this :: #item1}, ~{this :: #item2}, ~{this :: #item3})}">
+
+    <div id="item1">
+        <ul>
+            <li>AAA</li>
+            <li>BBB</li>
+            <li>CCC</li>
+        </ul>
+    </div>
+    <div id="item2">
+        <ul>
+            <li>i2-1</li>
+            <li>i2-2</li>
+            <li>i2-3</li>
+        </ul>
+    </div>
+    <div id="item3">
+        <ul>
+            <li>i3-1</li>
+            <li>i3-2</li>
+            <li>i3-3</li>
+        </ul>
+    </div>
+</th:block>

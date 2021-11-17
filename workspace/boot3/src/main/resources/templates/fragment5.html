@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div th:fragment="cssItems(first, second, third)">
+
+    <style>
+          .firstItem {
+                background-color:red;
+                color:yellow;
+                }
+          .secondItem {
+                background-color:black;
+                color:aqua;
+              }
+           .thirdItem {
+                background-color:gray;
+                color:black;
+               }
+      </style>
+
+    <div class="firstItem">
+        <th:block th:replace="${first}"></th:block>
+    </div>
+    <div class="secondItem">
+        <th:block th:replace="${second}"></th:block>
+    </div>
+    <div class="thirdItem">
+        <th:block th:replace="${third}"></th:block>
+    </div>
+
+</div>
+</body>
+</html>

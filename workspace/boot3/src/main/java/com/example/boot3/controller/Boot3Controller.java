@@ -112,4 +112,45 @@ public class Boot3Controller {
         return "link";
     }
 
+
+    @GetMapping("/layout1")
+    public String layout1(){
+        return "layout1";
+    }
+
+    @GetMapping("/layout2")
+    public String layout2(){
+        return "layout2";
+    }
+
+    @GetMapping("/layout3")
+    public String layout3(){
+        return "layout3";
+    }
+
+    @GetMapping("/layout4")
+    public String layout4(){
+        return "layout4";
+    }
+
+    @GetMapping("/layout")
+    public String layout(){
+        return "layout/layout1";
+    }
+
+    @GetMapping("/content1")
+    public String content1(){
+        return "layout/content1";
+    }
+
+    @GetMapping("/content2")
+    public String content2(){
+        return "layout/content2";
+    }
+
+    @GetMapping("/content3")
+    public String content3(){
+        return "layout/content3";
+    }
+
 }
